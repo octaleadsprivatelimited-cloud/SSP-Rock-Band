@@ -1,5 +1,4 @@
 {
-  "//": "SPA routing config for Vercel: let Vite/React handle client-side routes",
   "rewrites": [
     {
       "source": "/(.*)",
