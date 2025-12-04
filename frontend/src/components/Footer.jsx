@@ -157,14 +157,22 @@ const Footer = () => {
       <div className="border-t border-dark-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-gray-500 text-sm text-center md:text-left">
-              © 2025 SSP Rock Band. All rights reserved.
-            </p>
+            <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+              <p className="text-gray-500 text-sm text-center md:text-left">
+                © 2025 SSP Rock Band. All rights reserved.
+              </p>
+              <a 
+                href="/sitemap.xml"
+                className="text-gray-500 hover:text-primary-400 transition-colors text-sm"
+              >
+                Sitemap
+              </a>
+            </div>
             <p className="text-gray-500 text-sm">
               Developed by{' '}
               <a 
                 href="https://octaleads.com" 
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-400 hover:text-primary-300 transition-colors"
               >
