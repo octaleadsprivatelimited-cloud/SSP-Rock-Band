@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaPlay, FaTimes, FaExpand, FaCamera, FaVideo } from 'react-icons/fa';
 import SEO from '../components/SEO';
@@ -379,7 +380,7 @@ const Gallery = () => {
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Book SSP Rock Band for your next event and experience the magic in person.
             </p>
-            <a href="/booking" className="btn-gold">
+            <Link to="/booking" className="btn-gold">
               Book Now
             </a>
           </motion.div>

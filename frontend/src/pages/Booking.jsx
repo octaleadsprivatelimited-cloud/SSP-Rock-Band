@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaCalendarAlt, FaClock, FaMapMarkerAlt, FaUsers, FaMusic, FaCheck, FaArrowRight, FaArrowLeft, FaPhone, FaEnvelope } from 'react-icons/fa';
 import axios from 'axios';
@@ -161,12 +162,12 @@ const Booking = () => {
               availability and discuss further details.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="/" className="btn-primary">
+              <Link to="/" className="btn-primary">
                 Back to Home
-              </a>
-              <a href="/contact" className="btn-secondary">
+              </Link>
+              <Link to="/contact" className="btn-secondary">
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </motion.div>
