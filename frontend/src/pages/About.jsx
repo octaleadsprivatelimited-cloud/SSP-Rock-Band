@@ -1,39 +1,9 @@
 import { motion } from 'framer-motion';
-import { FaGuitar, FaDrum, FaMicrophone, FaMusic, FaStar, FaQuoteLeft, FaAward, FaHeart, FaUsers } from 'react-icons/fa';
+import { FaMusic, FaStar, FaQuoteLeft, FaAward, FaHeart, FaUsers } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
 const About = () => {
-  const bandMembers = [
-    {
-      name: 'Srinivas Prasad',
-      role: 'Lead Vocalist & Founder',
-      image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      description: 'With 15+ years of experience, Srinivas brings powerful vocals and stage presence to every performance.',
-      icon: FaMicrophone,
-    },
-    {
-      name: 'Karthik Reddy',
-      role: 'Lead Guitarist',
-      image: 'https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      description: 'A virtuoso guitarist who has mastered everything from classic rock riffs to modern metal solos.',
-      icon: FaGuitar,
-    },
-    {
-      name: 'Venkat Rao',
-      role: 'Drummer',
-      image: 'https://images.unsplash.com/photo-1524230659092-07f99a75c013?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      description: 'The heartbeat of SSP Rock Band, Venkat keeps the energy high with his explosive drumming.',
-      icon: FaDrum,
-    },
-    {
-      name: 'Ravi Kumar',
-      role: 'Bassist',
-      image: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80',
-      description: 'Laying down the groove that makes everyone move, Ravi is the backbone of our sound.',
-      icon: FaMusic,
-    },
-  ];
 
   const milestones = [
     { year: '2010', title: 'The Beginning', description: 'SSP Rock Band was founded in Vizag with a passion for rock music.' },
@@ -76,14 +46,14 @@ const About = () => {
   return (
     <>
       <SEO
-        title="About SSP Rock Band | Our Story, Team & Experience"
-        description="Learn about SSP Rock Band - Vizag's premier rock band with 14+ years of experience. Meet our talented musicians, discover our journey, and see why we're the top choice for live music events."
-        keywords="SSP Rock Band about, rock band team, Vizag musicians, professional band members, live music experience, band history, music group Vizag, experienced musicians, rock band story"
-        ogTitle="About SSP Rock Band | Our Story, Team & Experience"
-        ogDescription="Learn about SSP Rock Band - Vizag's premier rock band with 14+ years of experience. Meet our talented musicians and discover our journey."
+        title="About SSP Rock Band | Our Story & Experience"
+        description="Learn about SSP Rock Band - Vizag's premier rock band with 14+ years of experience. Discover our journey and see why we're the top choice for live music events."
+        keywords="SSP Rock Band about, live music experience, band history, music group Vizag, experienced musicians, rock band story, Vizag rock band"
+        ogTitle="About SSP Rock Band | Our Story & Experience"
+        ogDescription="Learn about SSP Rock Band - Vizag's premier rock band with 14+ years of experience. Discover our journey and see why we're the top choice for live music events."
         ogUrl="/about"
-        twitterTitle="About SSP Rock Band | Our Story, Team & Experience"
-        twitterDescription="Learn about SSP Rock Band - Vizag's premier rock band with 14+ years of experience. Meet our talented musicians and discover our journey."
+        twitterTitle="About SSP Rock Band | Our Story & Experience"
+        twitterDescription="Learn about SSP Rock Band - Vizag's premier rock band with 14+ years of experience. Discover our journey and see why we're the top choice for live music events."
         canonicalUrl="/about"
       />
       <div className="pt-20 overflow-x-hidden">
@@ -212,58 +182,6 @@ const About = () => {
                 </div>
                 <h3 className="text-2xl font-heading font-bold text-white mb-4">{value.title}</h3>
                 <p className="text-gray-400">{value.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Band Members Section */}
-      <section className="py-24 bg-dark-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <span className="text-primary-500 uppercase tracking-widest text-sm font-medium mb-4 block">
-              The Team
-            </span>
-            <h2 className="section-title">Meet the Band</h2>
-            <p className="section-subtitle">
-              The talented musicians behind the magic
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {bandMembers.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="card card-hover group"
-              >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-72 object-cover transform group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-transparent to-transparent" />
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <div className="flex items-center gap-2 mb-2">
-                      <member.icon className="text-primary-500" />
-                      <span className="text-primary-400 text-sm uppercase tracking-wider">{member.role}</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-heading font-bold text-white mb-2">{member.name}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed">{member.description}</p>
-                </div>
               </motion.div>
             ))}
           </div>
