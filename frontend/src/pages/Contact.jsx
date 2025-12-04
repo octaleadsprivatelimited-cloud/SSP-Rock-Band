@@ -112,14 +112,16 @@ const Contact = () => {
   return (
     <>
       <SEO
-        title="Contact SSP Rock Band | Get in Touch for Your Event"
-        description="Contact SSP Rock Band for bookings and inquiries. Call 9652710153 or email us. Located in Vizag, Andhra Pradesh. We're here to make your event unforgettable!"
-        keywords="contact SSP Rock Band, book rock band, event booking Vizag, band contact number, music event inquiry, Vizag band phone number, event planning contact, live music booking"
+        title="Contact SSP Rock Band | Get in Touch for Your Event in Vizag"
+        description="Contact SSP Rock Band for bookings and inquiries. Call 9652710153 or email sekharponnada1234@gmail.com. Located in Vizag, Andhra Pradesh. We're here to make your event unforgettable! Get instant quotes, discuss your event requirements, and book the best live rock band in Vizag."
+        keywords="contact SSP Rock Band, book rock band Vizag, event booking Visakhapatnam, band contact number, music event inquiry, Vizag band phone 9652710153, event planning contact, live music booking, SSP Rock Band email, band inquiry form, event consultation Vizag"
         ogTitle="Contact SSP Rock Band | Get in Touch for Your Event"
-        ogDescription="Contact SSP Rock Band for bookings and inquiries. Call 9652710153 or email us. Located in Vizag, Andhra Pradesh."
+        ogDescription="Contact SSP Rock Band for bookings and inquiries. Call 9652710153 or email us. Located in Vizag, Andhra Pradesh. We're here to make your event unforgettable!"
+        ogImage="/ssp-logo.png"
         ogUrl="/contact"
         twitterTitle="Contact SSP Rock Band | Get in Touch for Your Event"
-        twitterDescription="Contact SSP Rock Band for bookings and inquiries. Call 9652710153 or email us. Located in Vizag, Andhra Pradesh."
+        twitterDescription="Contact SSP Rock Band for bookings and inquiries. Call 9652710153 or email us. Located in Vizag, Andhra Pradesh. We're here to make your event unforgettable!"
+        twitterImage="/ssp-logo.png"
         canonicalUrl="/contact"
       />
       <div className="pt-20 overflow-x-hidden">

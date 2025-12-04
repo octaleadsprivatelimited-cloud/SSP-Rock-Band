@@ -8,8 +8,10 @@ const NotFound = () => {
     <>
       <SEO
         title="404 - Page Not Found | SSP Rock Band"
-        description="The page you're looking for doesn't exist. Return to SSP Rock Band homepage."
+        description="The page you're looking for doesn't exist. Return to SSP Rock Band homepage to explore our services, gallery, and book us for your event in Vizag."
         keywords="404, page not found, SSP Rock Band"
+        ogImage="/ssp-logo.png"
+        twitterImage="/ssp-logo.png"
         canonicalUrl="/404"
       />
       <div className="pt-20 min-h-screen flex items-center justify-center overflow-x-hidden">

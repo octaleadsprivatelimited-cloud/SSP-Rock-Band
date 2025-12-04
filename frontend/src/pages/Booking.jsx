@@ -162,9 +162,11 @@ const Booking = () => {
     return (
       <>
         <SEO
-          title="Booking Confirmed | SSP Rock Band"
-          description="Your booking request has been submitted successfully. We'll contact you soon to confirm your event details."
-          keywords="booking confirmed, event booking success, SSP Rock Band booking"
+          title="Booking Confirmed | SSP Rock Band - Thank You"
+          description="Your booking request has been submitted successfully to SSP Rock Band. We'll contact you within 24-48 hours to confirm your event details. Thank you for choosing us for your special occasion!"
+          keywords="booking confirmed, event booking success, SSP Rock Band booking confirmation, booking reference number"
+          ogImage="/ssp-logo.png"
+          twitterImage="/ssp-logo.png"
           canonicalUrl="/booking"
         />
         <div className="pt-20 min-h-screen flex items-center justify-center">
@@ -209,14 +211,16 @@ const Booking = () => {
   return (
     <>
       <SEO
-        title="Book SSP Rock Band | Event Booking Form"
-        description="Book SSP Rock Band for your event in Vizag. Fill out our booking form to reserve your date. We offer professional live music for weddings, corporate events, parties, and more."
-        keywords="book SSP Rock Band, event booking form, reserve band, book live music, event date booking, Vizag band booking, wedding band booking, corporate event booking"
-        ogTitle="Book SSP Rock Band | Event Booking Form"
-        ogDescription="Book SSP Rock Band for your event in Vizag. Fill out our booking form to reserve your date for professional live music."
+        title="Book SSP Rock Band | Online Event Booking Form | Reserve Your Date"
+        description="Book SSP Rock Band for your event in Vizag. Fill out our easy online booking form to reserve your date. We offer professional live music for weddings, corporate events, parties, festivals, and more. Get instant booking confirmation and personalized service for your special occasion."
+        keywords="book SSP Rock Band, event booking form Vizag, reserve band online, book live music, event date booking, Vizag band booking, wedding band booking, corporate event booking, online band reservation, event date availability, music booking form, party band booking Andhra Pradesh"
+        ogTitle="Book SSP Rock Band | Online Event Booking Form"
+        ogDescription="Book SSP Rock Band for your event in Vizag. Fill out our easy online booking form to reserve your date for professional live music. Get instant booking confirmation."
+        ogImage="/ssp-logo.png"
         ogUrl="/booking"
-        twitterTitle="Book SSP Rock Band | Event Booking Form"
-        twitterDescription="Book SSP Rock Band for your event in Vizag. Fill out our booking form to reserve your date for professional live music."
+        twitterTitle="Book SSP Rock Band | Online Event Booking Form"
+        twitterDescription="Book SSP Rock Band for your event in Vizag. Fill out our easy online booking form to reserve your date for professional live music."
+        twitterImage="/ssp-logo.png"
         canonicalUrl="/booking"
       />
       <div className="pt-20">

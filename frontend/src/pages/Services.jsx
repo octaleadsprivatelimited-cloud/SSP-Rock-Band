@@ -55,14 +55,16 @@ const Services = () => {
   return (
     <>
       <SEO
-        title="Services | SSP Rock Band - Wedding, Corporate & Event Entertainment"
-        description="SSP Rock Band offers professional live music services for weddings, corporate events, birthday parties, festivals, and private celebrations in Vizag. Custom performances tailored to your event."
-        keywords="wedding band services, corporate event entertainment, birthday party band, festival band, private party music, live music services Vizag, event entertainment, custom music performance, professional band services"
+        title="Services | SSP Rock Band - Wedding, Corporate & Event Entertainment in Vizag"
+        description="SSP Rock Band offers professional live music services for weddings, corporate events, birthday parties, festivals, and private celebrations in Vizag. Custom performances tailored to your event. Multiple music styles including rock, classic rock, modern rock, and Bollywood. Professional sound setup and lighting included."
+        keywords="wedding band services Vizag, corporate event entertainment, birthday party band Andhra Pradesh, festival band, private party music, live music services Visakhapatnam, event entertainment, custom music performance, professional band services, wedding entertainment packages, corporate event music, party band pricing, live music booking Vizag"
         ogTitle="Services | SSP Rock Band - Wedding, Corporate & Event Entertainment"
-        ogDescription="Professional live music services for weddings, corporate events, birthday parties, festivals, and private celebrations in Vizag."
+        ogDescription="Professional live music services for weddings, corporate events, birthday parties, festivals, and private celebrations in Vizag. Custom performances tailored to your event with professional sound and lighting."
+        ogImage="/ssp-logo.png"
         ogUrl="/services"
         twitterTitle="Services | SSP Rock Band - Wedding, Corporate & Event Entertainment"
-        twitterDescription="Professional live music services for weddings, corporate events, birthday parties, festivals, and private celebrations in Vizag."
+        twitterDescription="Professional live music services for weddings, corporate events, birthday parties, festivals, and private celebrations in Vizag. Custom performances tailored to your event."
+        twitterImage="/ssp-logo.png"
         canonicalUrl="/services"
       />
       <div className="pt-20">

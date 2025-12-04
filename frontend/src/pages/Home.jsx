@@ -53,14 +53,16 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="SSP Rock Band | Professional Live Rock Band for Events in Vizag"
-        description="SSP Rock Band - Vizag's premier live rock band for weddings, corporate events, parties, and concerts. Book the best rock band for your event. 14+ years of experience, 500+ events performed."
-        keywords="rock band, live band, wedding band, corporate event band, party band, Vizag band, Visakhapatnam band, live music, event entertainment, SSP Rock Band, professional musicians, rock music, live performance, event band India"
-        ogTitle="SSP Rock Band | Professional Live Rock Band for Events"
-        ogDescription="Vizag's premier live rock band for weddings, corporate events, parties, and concerts. Book us for an unforgettable experience!"
+        title="SSP Rock Band | Professional Live Rock Band for Events in Vizag | Book Now"
+        description="SSP Rock Band - Vizag's premier live rock band for weddings, corporate events, parties, and concerts. Book the best rock band for your event. 14+ years of experience, 500+ events performed. Professional musicians delivering electrifying performances across Andhra Pradesh and South India."
+        keywords="rock band Vizag, live band Visakhapatnam, wedding band Andhra Pradesh, corporate event band, party band Vizag, live music entertainment, SSP Rock Band, professional musicians, rock music performance, event band India, wedding entertainment, corporate event music, birthday party band, festival band, live performance Vizag"
+        ogTitle="SSP Rock Band | Professional Live Rock Band for Events in Vizag"
+        ogDescription="Vizag's premier live rock band for weddings, corporate events, parties, and concerts. 14+ years of experience, 500+ events performed. Book us for an unforgettable experience!"
+        ogImage="/ssp-logo.png"
         ogUrl="/"
-        twitterTitle="SSP Rock Band | Professional Live Rock Band for Events"
-        twitterDescription="Vizag's premier live rock band for weddings, corporate events, parties, and concerts. Book us for an unforgettable experience!"
+        twitterTitle="SSP Rock Band | Professional Live Rock Band for Events in Vizag"
+        twitterDescription="Vizag's premier live rock band for weddings, corporate events, parties, and concerts. 14+ years of experience, 500+ events performed. Book us for an unforgettable experience!"
+        twitterImage="/ssp-logo.png"
         canonicalUrl="/"
       />
       <div className="overflow-hidden">

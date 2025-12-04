@@ -46,14 +46,16 @@ const About = () => {
   return (
     <>
       <SEO
-        title="About SSP Rock Band | Our Story & Experience"
-        description="Learn about SSP Rock Band - Vizag's premier rock band with 14+ years of experience. Discover our journey and see why we're the top choice for live music events."
-        keywords="SSP Rock Band about, live music experience, band history, music group Vizag, experienced musicians, rock band story, Vizag rock band"
-        ogTitle="About SSP Rock Band | Our Story & Experience"
-        ogDescription="Learn about SSP Rock Band - Vizag's premier rock band with 14+ years of experience. Discover our journey and see why we're the top choice for live music events."
+        title="About SSP Rock Band | Our Story, Mission & 14+ Years of Excellence"
+        description="Learn about SSP Rock Band - Vizag's premier rock band with 14+ years of experience. Founded in 2010, we've performed at 500+ events across South India. Discover our journey, mission, values, and milestones that make us the top choice for live music events in Andhra Pradesh."
+        keywords="SSP Rock Band about, live music experience Vizag, band history, music group Visakhapatnam, experienced musicians Andhra Pradesh, rock band story, Vizag rock band history, professional band since 2010, event band milestones, music group values"
+        ogTitle="About SSP Rock Band | Our Story & 14+ Years of Excellence"
+        ogDescription="Learn about SSP Rock Band - Vizag's premier rock band with 14+ years of experience. Founded in 2010, we've performed at 500+ events. Discover our journey and see why we're the top choice for live music events."
+        ogImage="/ssp-logo.png"
         ogUrl="/about"
-        twitterTitle="About SSP Rock Band | Our Story & Experience"
-        twitterDescription="Learn about SSP Rock Band - Vizag's premier rock band with 14+ years of experience. Discover our journey and see why we're the top choice for live music events."
+        twitterTitle="About SSP Rock Band | Our Story & 14+ Years of Excellence"
+        twitterDescription="Learn about SSP Rock Band - Vizag's premier rock band with 14+ years of experience. Founded in 2010, we've performed at 500+ events. Discover our journey and see why we're the top choice for live music events."
+        twitterImage="/ssp-logo.png"
         canonicalUrl="/about"
       />
       <div className="pt-20 overflow-x-hidden">

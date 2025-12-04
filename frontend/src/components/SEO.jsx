@@ -14,7 +14,7 @@ const SEO = ({
   canonicalUrl
 }) => {
   useEffect(() => {
-    const baseUrl = 'https://ssprockband.com';
+    const baseUrl = 'https://ssprockband.in';
     
     // Update title
     if (title) {
@@ -47,11 +47,28 @@ const SEO = ({
       element.setAttribute('content', content);
     };
     
+    // Update or create name meta tags (for Twitter)
+    const updateNameTag = (name, content) => {
+      if (!content) return;
+      
+      let element = document.querySelector(`meta[name="${name}"]`);
+      if (!element) {
+        element = document.createElement('meta');
+        element.setAttribute('name', name);
+        document.head.appendChild(element);
+      }
+      element.setAttribute('content', content);
+    };
+    
     // Update description
     updateMetaTag('description', description);
     
     // Update keywords
     updateMetaTag('keywords', keywords);
+    
+    // Author and robots
+    updateMetaTag('author', 'SSP Rock Band');
+    updateMetaTag('robots', 'index, follow');
     
     // Open Graph tags
     if (ogTitle) updatePropertyTag('og:title', ogTitle);
@@ -59,19 +76,27 @@ const SEO = ({
     if (ogImage) {
       const fullImageUrl = ogImage.startsWith('http') ? ogImage : `${baseUrl}${ogImage}`;
       updatePropertyTag('og:image', fullImageUrl);
+      updatePropertyTag('og:image:secure_url', fullImageUrl);
+      updatePropertyTag('og:image:type', 'image/png');
+      updatePropertyTag('og:image:alt', 'SSP Rock Band Logo');
     }
     if (ogUrl) {
       const fullUrl = ogUrl.startsWith('http') ? ogUrl : `${baseUrl}${ogUrl}`;
       updatePropertyTag('og:url', fullUrl);
     }
+    updatePropertyTag('og:type', 'website');
+    updatePropertyTag('og:site_name', 'SSP Rock Band');
+    updatePropertyTag('og:locale', 'en_IN');
     
-    // Twitter tags
-    if (twitterTitle) updatePropertyTag('twitter:title', twitterTitle);
-    if (twitterDescription) updatePropertyTag('twitter:description', twitterDescription);
+    // Twitter tags (use name attribute)
+    if (twitterTitle) updateNameTag('twitter:title', twitterTitle);
+    if (twitterDescription) updateNameTag('twitter:description', twitterDescription);
     if (twitterImage) {
       const fullImageUrl = twitterImage.startsWith('http') ? twitterImage : `${baseUrl}${twitterImage}`;
-      updatePropertyTag('twitter:image', fullImageUrl);
+      updateNameTag('twitter:image', fullImageUrl);
+      updateNameTag('twitter:image:alt', 'SSP Rock Band Logo');
     }
+    updateNameTag('twitter:card', 'summary_large_image');
     
     // Canonical URL
     if (canonicalUrl) {

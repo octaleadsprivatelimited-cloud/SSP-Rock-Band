@@ -117,14 +117,16 @@ const Gallery = () => {
   return (
     <>
       <SEO
-        title="Gallery | SSP Rock Band - Photo & Video Gallery"
-        description="View our photo and video gallery showcasing SSP Rock Band's live performances at weddings, corporate events, parties, and concerts in Vizag. See us in action!"
-        keywords="SSP Rock Band gallery, band photos, live performance videos, wedding band photos, event photos, music performance gallery, Vizag band videos, rock band images"
-        ogTitle="Gallery | SSP Rock Band - Photo & Video Gallery"
-        ogDescription="View our photo and video gallery showcasing SSP Rock Band's live performances at weddings, corporate events, parties, and concerts."
+        title="Gallery | SSP Rock Band - Photo & Video Gallery of Live Performances"
+        description="View our comprehensive photo and video gallery showcasing SSP Rock Band's live performances at weddings, corporate events, parties, and concerts in Vizag. See us in action with stunning visuals from our 500+ events. Browse performance videos, event photos, and behind-the-scenes content."
+        keywords="SSP Rock Band gallery, band photos Vizag, live performance videos, wedding band photos, corporate event photos, music performance gallery, Vizag band videos, rock band images, event photography, live music videos, concert photos, party band gallery, performance highlights"
+        ogTitle="Gallery | SSP Rock Band - Photo & Video Gallery of Live Performances"
+        ogDescription="View our comprehensive photo and video gallery showcasing SSP Rock Band's live performances at weddings, corporate events, parties, and concerts in Vizag. See us in action!"
+        ogImage="/ssp-logo.png"
         ogUrl="/gallery"
-        twitterTitle="Gallery | SSP Rock Band - Photo & Video Gallery"
-        twitterDescription="View our photo and video gallery showcasing SSP Rock Band's live performances at weddings, corporate events, parties, and concerts."
+        twitterTitle="Gallery | SSP Rock Band - Photo & Video Gallery of Live Performances"
+        twitterDescription="View our comprehensive photo and video gallery showcasing SSP Rock Band's live performances at weddings, corporate events, parties, and concerts in Vizag."
+        twitterImage="/ssp-logo.png"
         canonicalUrl="/gallery"
       />
       <div className="pt-20">
