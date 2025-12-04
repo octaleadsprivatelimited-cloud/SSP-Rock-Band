@@ -382,7 +382,7 @@ const Gallery = () => {
             </p>
             <Link to="/booking" className="btn-gold">
               Book Now
-            </a>
+            </Link>
           </motion.div>
         </div>
       </section>
