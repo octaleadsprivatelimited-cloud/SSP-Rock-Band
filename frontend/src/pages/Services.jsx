@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FaGuitar, FaMusic, FaHeart, FaBriefcase, FaBirthdayCake, FaGlassCheers, FaTheaterMasks, FaCheck, FaArrowRight } from 'react-icons/fa';
+import SEO from '../components/SEO';
 
 const Services = () => {
   const services = [
@@ -52,7 +53,19 @@ const Services = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <>
+      <SEO
+        title="Services | SSP Rock Band - Wedding, Corporate & Event Entertainment"
+        description="SSP Rock Band offers professional live music services for weddings, corporate events, birthday parties, festivals, and private celebrations in Vizag. Custom performances tailored to your event."
+        keywords="wedding band services, corporate event entertainment, birthday party band, festival band, private party music, live music services Vizag, event entertainment, custom music performance, professional band services"
+        ogTitle="Services | SSP Rock Band - Wedding, Corporate & Event Entertainment"
+        ogDescription="Professional live music services for weddings, corporate events, birthday parties, festivals, and private celebrations in Vizag."
+        ogUrl="/services"
+        twitterTitle="Services | SSP Rock Band - Wedding, Corporate & Event Entertainment"
+        twitterDescription="Professional live music services for weddings, corporate events, birthday parties, festivals, and private celebrations in Vizag."
+        canonicalUrl="/services"
+      />
+      <div className="pt-20">
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
         <div 
@@ -230,6 +243,7 @@ const Services = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

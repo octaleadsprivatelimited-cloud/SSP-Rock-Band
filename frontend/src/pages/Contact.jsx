@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaWhatsapp, FaPaperPlane, FaCheck } from 'react-icons/fa';
 import axios from 'axios';
+import SEO from '../components/SEO';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -97,7 +98,19 @@ const Contact = () => {
   ];
 
   return (
-    <div className="pt-20 overflow-x-hidden">
+    <>
+      <SEO
+        title="Contact SSP Rock Band | Get in Touch for Your Event"
+        description="Contact SSP Rock Band for bookings and inquiries. Call 9652710153 or email us. Located in Vizag, Andhra Pradesh. We're here to make your event unforgettable!"
+        keywords="contact SSP Rock Band, book rock band, event booking Vizag, band contact number, music event inquiry, Vizag band phone number, event planning contact, live music booking"
+        ogTitle="Contact SSP Rock Band | Get in Touch for Your Event"
+        ogDescription="Contact SSP Rock Band for bookings and inquiries. Call 9652710153 or email us. Located in Vizag, Andhra Pradesh."
+        ogUrl="/contact"
+        twitterTitle="Contact SSP Rock Band | Get in Touch for Your Event"
+        twitterDescription="Contact SSP Rock Band for bookings and inquiries. Call 9652710153 or email us. Located in Vizag, Andhra Pradesh."
+        canonicalUrl="/contact"
+      />
+      <div className="pt-20 overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
         <div 
@@ -427,6 +440,7 @@ const Contact = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

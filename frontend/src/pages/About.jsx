@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaGuitar, FaDrum, FaMicrophone, FaMusic, FaStar, FaQuoteLeft, FaAward, FaHeart, FaUsers } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const About = () => {
   const bandMembers = [
@@ -73,7 +74,19 @@ const About = () => {
   ];
 
   return (
-    <div className="pt-20 overflow-x-hidden">
+    <>
+      <SEO
+        title="About SSP Rock Band | Our Story, Team & Experience"
+        description="Learn about SSP Rock Band - Vizag's premier rock band with 14+ years of experience. Meet our talented musicians, discover our journey, and see why we're the top choice for live music events."
+        keywords="SSP Rock Band about, rock band team, Vizag musicians, professional band members, live music experience, band history, music group Vizag, experienced musicians, rock band story"
+        ogTitle="About SSP Rock Band | Our Story, Team & Experience"
+        ogDescription="Learn about SSP Rock Band - Vizag's premier rock band with 14+ years of experience. Meet our talented musicians and discover our journey."
+        ogUrl="/about"
+        twitterTitle="About SSP Rock Band | Our Story, Team & Experience"
+        twitterDescription="Learn about SSP Rock Band - Vizag's premier rock band with 14+ years of experience. Meet our talented musicians and discover our journey."
+        canonicalUrl="/about"
+      />
+      <div className="pt-20 overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
         <div 
@@ -391,6 +404,7 @@ const About = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

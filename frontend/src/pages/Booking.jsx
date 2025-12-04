@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaCalendarAlt, FaClock, FaMapMarkerAlt, FaUsers, FaMusic, FaCheck, FaArrowRight, FaArrowLeft, FaPhone, FaEnvelope } from 'react-icons/fa';
 import axios from 'axios';
+import SEO from '../components/SEO';
 
 const Booking = () => {
   const [step, setStep] = useState(1);
@@ -128,7 +129,14 @@ const Booking = () => {
 
   if (submitStatus === 'success') {
     return (
-      <div className="pt-20 min-h-screen flex items-center justify-center">
+      <>
+        <SEO
+          title="Booking Confirmed | SSP Rock Band"
+          description="Your booking request has been submitted successfully. We'll contact you soon to confirm your event details."
+          keywords="booking confirmed, event booking success, SSP Rock Band booking"
+          canonicalUrl="/booking"
+        />
+        <div className="pt-20 min-h-screen flex items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -163,11 +171,24 @@ const Booking = () => {
           </div>
         </motion.div>
       </div>
+      </>
     );
   }
 
   return (
-    <div className="pt-20">
+    <>
+      <SEO
+        title="Book SSP Rock Band | Event Booking Form"
+        description="Book SSP Rock Band for your event in Vizag. Fill out our booking form to reserve your date. We offer professional live music for weddings, corporate events, parties, and more."
+        keywords="book SSP Rock Band, event booking form, reserve band, book live music, event date booking, Vizag band booking, wedding band booking, corporate event booking"
+        ogTitle="Book SSP Rock Band | Event Booking Form"
+        ogDescription="Book SSP Rock Band for your event in Vizag. Fill out our booking form to reserve your date for professional live music."
+        ogUrl="/booking"
+        twitterTitle="Book SSP Rock Band | Event Booking Form"
+        twitterDescription="Book SSP Rock Band for your event in Vizag. Fill out our booking form to reserve your date for professional live music."
+        canonicalUrl="/booking"
+      />
+      <div className="pt-20">
       {/* Hero Section */}
       <section className="relative py-16 overflow-hidden">
         <div 
@@ -588,6 +609,7 @@ const Booking = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

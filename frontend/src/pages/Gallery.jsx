@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaPlay, FaTimes, FaExpand, FaCamera, FaVideo } from 'react-icons/fa';
+import SEO from '../components/SEO';
 
 const Gallery = () => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -113,7 +114,19 @@ const Gallery = () => {
     : galleryItems.filter(item => item.category === activeTab);
 
   return (
-    <div className="pt-20">
+    <>
+      <SEO
+        title="Gallery | SSP Rock Band - Photo & Video Gallery"
+        description="View our photo and video gallery showcasing SSP Rock Band's live performances at weddings, corporate events, parties, and concerts in Vizag. See us in action!"
+        keywords="SSP Rock Band gallery, band photos, live performance videos, wedding band photos, event photos, music performance gallery, Vizag band videos, rock band images"
+        ogTitle="Gallery | SSP Rock Band - Photo & Video Gallery"
+        ogDescription="View our photo and video gallery showcasing SSP Rock Band's live performances at weddings, corporate events, parties, and concerts."
+        ogUrl="/gallery"
+        twitterTitle="Gallery | SSP Rock Band - Photo & Video Gallery"
+        twitterDescription="View our photo and video gallery showcasing SSP Rock Band's live performances at weddings, corporate events, parties, and concerts."
+        canonicalUrl="/gallery"
+      />
+      <div className="pt-20">
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
         <div 
@@ -373,6 +386,7 @@ const Gallery = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

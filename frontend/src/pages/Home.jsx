@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaPlay, FaCalendarAlt, FaUsers, FaMusic, FaStar, FaQuoteLeft, FaArrowRight, FaGuitar, FaDrum, FaMicrophone } from 'react-icons/fa';
+import SEO from '../components/SEO';
 
 const Home = () => {
   const stats = [
@@ -50,7 +51,19 @@ const Home = () => {
   ];
 
   return (
-    <div className="overflow-hidden">
+    <>
+      <SEO
+        title="SSP Rock Band | Professional Live Rock Band for Events in Vizag"
+        description="SSP Rock Band - Vizag's premier live rock band for weddings, corporate events, parties, and concerts. Book the best rock band for your event. 14+ years of experience, 500+ events performed."
+        keywords="rock band, live band, wedding band, corporate event band, party band, Vizag band, Visakhapatnam band, live music, event entertainment, SSP Rock Band, professional musicians, rock music, live performance, event band India"
+        ogTitle="SSP Rock Band | Professional Live Rock Band for Events"
+        ogDescription="Vizag's premier live rock band for weddings, corporate events, parties, and concerts. Book us for an unforgettable experience!"
+        ogUrl="/"
+        twitterTitle="SSP Rock Band | Professional Live Rock Band for Events"
+        twitterDescription="Vizag's premier live rock band for weddings, corporate events, parties, and concerts. Book us for an unforgettable experience!"
+        canonicalUrl="/"
+      />
+      <div className="overflow-hidden">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center">
         {/* Background */}
@@ -389,6 +402,7 @@ const Home = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 
