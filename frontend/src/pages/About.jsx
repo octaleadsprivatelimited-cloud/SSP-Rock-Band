@@ -73,7 +73,7 @@ const About = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
         <div 
@@ -116,10 +116,10 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl md:text-5xl font-display uppercase tracking-wider text-white mb-6">
+              <h2 className="text-4xl md:text-5xl font-display uppercase tracking-wider text-white mb-6 break-words">
                 Our <span className="text-primary-500">Mission</span>
               </h2>
-              <p className="text-gray-400 text-lg leading-relaxed mb-6">
+              <p className="text-gray-400 text-lg leading-relaxed mb-6 break-words">
                 SSP Rock Band was born from a simple belief: live rock music has the power to 
                 transform any event into an extraordinary experience. Founded in Vizag in 2010, 
                 we started as a group of passionate musicians who wanted to share their love 
@@ -142,27 +142,27 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="grid grid-cols-2 gap-4"
+              className="grid grid-cols-2 gap-2 sm:gap-4"
             >
               <img
                 src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                 alt="Band performing"
-                className="rounded-2xl h-64 object-cover"
+                className="rounded-2xl h-64 object-cover w-full"
               />
               <img
                 src="https://images.unsplash.com/photo-1501612780327-45045538702b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                 alt="Concert crowd"
-                className="rounded-2xl h-64 object-cover mt-8"
+                className="rounded-2xl h-64 object-cover mt-8 w-full"
               />
               <img
                 src="https://images.unsplash.com/photo-1524230659092-07f99a75c013?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                 alt="Drummer"
-                className="rounded-2xl h-64 object-cover -mt-8"
+                className="rounded-2xl h-64 object-cover -mt-8 w-full"
               />
               <img
                 src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                 alt="Guitarist"
-                className="rounded-2xl h-64 object-cover"
+                className="rounded-2xl h-64 object-cover w-full"
               />
             </motion.div>
           </div>
@@ -272,7 +272,7 @@ const About = () => {
             <h2 className="section-title">Milestones</h2>
           </motion.div>
 
-          <div className="relative">
+          <div className="relative overflow-x-hidden">
             {/* Timeline line */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-dark-700 hidden md:block" />
             
@@ -288,19 +288,19 @@ const About = () => {
                     index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
                   }`}
                 >
-                  <div className={`flex-1 ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
+                  <div className={`flex-1 w-full ${index % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
                     <div className="card p-6">
                       <span className="text-4xl font-display text-primary-500">{milestone.year}</span>
                       <h3 className="text-xl font-heading font-bold text-white mt-2 mb-2">{milestone.title}</h3>
-                      <p className="text-gray-400">{milestone.description}</p>
+                      <p className="text-gray-400 break-words">{milestone.description}</p>
                     </div>
                   </div>
                   
-                  <div className="w-4 h-4 rounded-full bg-primary-500 border-4 border-dark-900 relative z-10 hidden md:block">
+                  <div className="w-4 h-4 rounded-full bg-primary-500 border-4 border-dark-900 relative z-10 hidden md:block flex-shrink-0">
                     <div className="absolute inset-0 rounded-full bg-primary-500 animate-ping opacity-50" />
                   </div>
                   
-                  <div className="flex-1" />
+                  <div className="flex-1 hidden md:block" />
                 </motion.div>
               ))}
             </div>
@@ -379,7 +379,7 @@ const About = () => {
               Let SSP Rock Band be the highlight of your next event. 
               Contact us today for bookings and inquiries.
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex flex-wrap justify-center gap-4 px-4">
               <Link to="/booking" className="btn-primary">
                 Book Us Now
               </Link>

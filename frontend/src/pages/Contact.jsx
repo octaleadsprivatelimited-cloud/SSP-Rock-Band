@@ -97,7 +97,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">
         <div 
@@ -148,7 +148,7 @@ const Contact = () => {
                 </div>
                 <h3 className="text-lg font-heading font-bold text-white mb-2">{info.title}</h3>
                 {info.details.map((detail, i) => (
-                  <p key={i} className="text-gray-400 text-sm">{detail}</p>
+                  <p key={i} className="text-gray-400 text-sm break-words">{detail}</p>
                 ))}
                 {info.action && (
                   <a
@@ -177,10 +177,10 @@ const Contact = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-3xl font-display uppercase tracking-wider text-white mb-2">
+              <h2 className="text-3xl font-display uppercase tracking-wider text-white mb-2 break-words">
                 Send Us a Message
               </h2>
-              <p className="text-gray-400 mb-8">
+              <p className="text-gray-400 mb-8 break-words">
                 Fill out the form below and we'll get back to you within 24 hours.
               </p>
 
@@ -306,12 +306,12 @@ const Contact = () => {
             >
               {/* Map */}
               <div className="card overflow-hidden">
-                <div className="aspect-[4/3]">
+                <div className="aspect-[4/3] w-full">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.4!2d83.2983!3d17.7384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39431389e6973f%3A0x92d9c20395498468!2sVisakhapatnam%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1699000000000!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
-                    style={{ border: 0 }}
+                    style={{ border: 0, maxWidth: '100%' }}
                     allowFullScreen=""
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
@@ -359,7 +359,7 @@ const Contact = () => {
                 <div className="flex flex-wrap gap-4">
                   <a
                     href="tel:9652710153"
-                    className="btn-primary flex-1 text-center"
+                    className="btn-primary flex-1 min-w-0 text-center"
                   >
                     <FaPhone className="mr-2" />
                     Call Now
@@ -368,7 +368,7 @@ const Contact = () => {
                     href="https://wa.me/919652710153"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 inline-flex items-center justify-center px-6 py-4 text-lg font-bold uppercase tracking-wider text-white bg-green-600 rounded-lg hover:bg-green-500 transition-colors"
+                    className="flex-1 min-w-0 inline-flex items-center justify-center px-4 sm:px-6 py-4 text-base sm:text-lg font-bold uppercase tracking-wider text-white bg-green-600 rounded-lg hover:bg-green-500 transition-colors"
                   >
                     <FaWhatsapp className="mr-2" />
                     WhatsApp
