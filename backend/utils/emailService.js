@@ -19,7 +19,7 @@ const sendContactNotification = async (contactData) => {
   
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: process.env.ADMIN_EMAIL || 'info@ssprockband.com',
+    to: process.env.ADMIN_EMAIL || 'sekharponnada1234@gmail.com',
     subject: `New Contact Form Submission - ${contactData.name}`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -89,7 +89,7 @@ const sendBookingConfirmation = async (bookingData) => {
           <p style="text-align: center;">
             <strong>Questions?</strong><br>
             Call us: <a href="tel:9652710153" style="color: #ef4444;">9652710153</a><br>
-            Email: <a href="mailto:info@ssprockband.com" style="color: #ef4444;">info@ssprockband.com</a>
+            Email: <a href="mailto:sekharponnada1234@gmail.com" style="color: #ef4444;">sekharponnada1234@gmail.com</a>
           </p>
         </div>
         <div style="background: #111; padding: 15px; text-align: center; color: #888;">
@@ -116,7 +116,7 @@ const sendBookingNotification = async (bookingData) => {
   
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: process.env.ADMIN_EMAIL || 'info@ssprockband.com',
+    to: process.env.ADMIN_EMAIL || 'sekharponnada1234@gmail.com',
     subject: `🎸 New Booking Request - ${bookingData.bookingReference}`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

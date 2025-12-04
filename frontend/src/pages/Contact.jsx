@@ -58,15 +58,15 @@ const Contact = () => {
     {
       icon: FaEnvelope,
       title: 'Email',
-      details: ['info@ssprockband.com', 'bookings@ssprockband.com'],
-      action: 'mailto:info@ssprockband.com',
+      details: ['sekharponnada1234@gmail.com'],
+      action: 'mailto:sekharponnada1234@gmail.com',
       actionLabel: 'Send Email',
     },
     {
       icon: FaMapMarkerAlt,
       title: 'Location',
       details: ['Vizag (Visakhapatnam)', 'Andhra Pradesh, India'],
-      action: 'https://maps.google.com/?q=Visakhapatnam',
+      action: 'https://maps.app.goo.gl/6cKZHts5yLUTMBjD6',
       actionLabel: 'Get Directions',
     },
     {
@@ -133,7 +133,7 @@ const Contact = () => {
       {/* Contact Info Cards */}
       <section className="py-16 bg-dark-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {contactInfo.map((info, index) => (
               <motion.div
                 key={info.title}
@@ -319,7 +319,7 @@ const Contact = () => {
                   />
                 </div>
                 <a 
-                  href="https://maps.app.goo.gl/DnCV9akLsnHDDu4eA" 
+                  href="https://maps.app.goo.gl/6cKZHts5yLUTMBjD6" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block p-4 bg-dark-800 text-center text-primary-400 hover:text-primary-300 transition-colors"

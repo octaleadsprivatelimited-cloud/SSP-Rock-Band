@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaGuitar, FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaSpotify, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaSpotify, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Footer = () => {
   const quickLinks = [
@@ -36,7 +36,11 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-6">
-              <FaGuitar className="text-3xl text-primary-500 transform -rotate-45" />
+              <img 
+                src="/ssp-logo.png" 
+                alt="SSP Rock Band Logo" 
+                className="h-8 w-auto object-contain"
+              />
               <div>
                 <h2 className="text-xl font-display tracking-wider text-white">
                   SSP <span className="text-primary-500">Rock Band</span>
@@ -121,7 +125,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="mailto:info@ssprockband.com"
+                  href="mailto:sekharponnada1234@gmail.com"
                   className="flex items-center gap-3 text-gray-400 hover:text-primary-400 transition-colors"
                 >
                   <div className="w-10 h-10 flex items-center justify-center rounded-full bg-dark-800">
@@ -129,7 +133,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wider">Email</p>
-                    <p className="font-medium">info@ssprockband.com</p>
+                    <p className="font-medium">sekharponnada1234@gmail.com</p>
                   </div>
                 </a>
               </li>

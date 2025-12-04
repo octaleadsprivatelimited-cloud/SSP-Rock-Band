@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { FaBars, FaTimes, FaGuitar, FaPhone } from 'react-icons/fa';
+import { FaBars, FaTimes, FaPhone } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
@@ -35,9 +35,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="relative">
-              <FaGuitar className="text-4xl text-primary-500 transform -rotate-45 group-hover:rotate-0 transition-transform duration-500" />
-              <div className="absolute inset-0 bg-primary-500/30 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="relative flex items-center">
+              <img 
+                src="/ssp-logo.png" 
+                alt="SSP Rock Band Logo" 
+                className="h-14 w-auto object-contain group-hover:scale-110 transition-transform duration-500"
+              />
             </div>
             <div>
               <h1 className="text-2xl font-display tracking-wider text-white">

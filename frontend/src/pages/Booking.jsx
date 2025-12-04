@@ -578,10 +578,10 @@ const Booking = () => {
                 <FaPhone /> 9652710153
               </a>
               <a
-                href="mailto:bookings@ssprockband.com"
+                href="mailto:sekharponnada1234@gmail.com"
                 className="flex items-center gap-2 text-primary-400 hover:text-primary-300 transition-colors"
               >
-                <FaEnvelope /> bookings@ssprockband.com
+                <FaEnvelope /> sekharponnada1234@gmail.com
               </a>
             </div>
           </motion.div>
