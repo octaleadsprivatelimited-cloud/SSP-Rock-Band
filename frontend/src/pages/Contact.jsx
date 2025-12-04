@@ -29,9 +29,20 @@ const Contact = () => {
     setSubmitStatus(null);
 
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-      const response = await axios.post(`${apiUrl}/api/contact`, formData);
-      if (response.data.success) {
+      const response = await axios.post('https://formspree.io/f/myzrpkoq', {
+        _subject: 'SSP Rock Band - Contact Form Submission',
+        name: formData.name,
+        email: formData.email,
+        eventDate: formData.eventDate,
+        eventType: formData.eventType,
+        message: formData.message,
+      }, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      
+      if (response.status === 200) {
         setSubmitStatus('success');
         setFormData({
           name: '',

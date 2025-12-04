@@ -47,11 +47,40 @@ const Booking = () => {
     setSubmitStatus(null);
 
     try {
-      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-      const response = await axios.post(`${apiUrl}/api/booking`, formData);
-      if (response.data.success) {
+      // Generate a booking reference
+      const bookingRef = `SSP-${Date.now().toString().slice(-6)}`;
+      
+      const response = await axios.post('https://formspree.io/f/myzrpkoq', {
+        _subject: 'SSP Rock Band - Booking Request',
+        bookingReference: bookingRef,
+        // Contact Info
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        phone: formData.phone,
+        // Event Details
+        eventType: formData.eventType,
+        eventDate: formData.eventDate,
+        eventTime: formData.eventTime,
+        eventDuration: formData.eventDuration,
+        // Venue Info
+        venueName: formData.venueName,
+        venueAddress: formData.venueAddress,
+        venueCity: formData.venueCity,
+        // Preferences
+        expectedGuests: formData.expectedGuests,
+        bandPreference: formData.bandPreference,
+        specialRequests: formData.specialRequests,
+        budget: formData.budget,
+      }, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      
+      if (response.status === 200) {
         setSubmitStatus('success');
-        setBookingReference(response.data.bookingReference);
+        setBookingReference(bookingRef);
       }
     } catch (error) {
       console.error('Error submitting booking:', error);
